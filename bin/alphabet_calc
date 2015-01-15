@@ -3,7 +3,6 @@
 require 'alphabet_calc'
 # begin
   input = ARGV.join
-  puts "evaluating #{input}"
   puts AlphabetCalc::calculate(input)
 # rescue
 #   puts 'unable to evaluate input'
