@@ -1,4 +1,5 @@
 require "alphabet_calc/version"
+require "alphabet_calc/alphabet_num"
 
 module AlphabetCalc
 

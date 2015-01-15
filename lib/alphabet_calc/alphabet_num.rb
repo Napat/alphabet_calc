@@ -1,3 +1,5 @@
+require "alphabet_calc/alphabet_digit"
+
 module AlphabetCalc
   class AlphabetNum
 
