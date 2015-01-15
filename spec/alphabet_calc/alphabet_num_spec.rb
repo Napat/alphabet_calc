@@ -24,19 +24,19 @@ describe AlphabetCalc::AlphabetNum do
 
   describe 'initialize from number' do
     it 'return correct alphabets for 0' do
-      a = AlphabetCalc::AlphabetNum.new('0')
+      a = AlphabetCalc::AlphabetNum.new(0)
       expect(a.to_str).to eq 'a'
     end
     it 'return correct alphabets for 25' do
-      z = AlphabetCalc::AlphabetNum.new('25')
+      z = AlphabetCalc::AlphabetNum.new(25)
       expect(z.to_str).to eq 'z'
     end
     it 'return correct alphabets for 26' do
-      ba = AlphabetCalc::AlphabetNum.new('26')
+      ba = AlphabetCalc::AlphabetNum.new(26)
       expect(ba.to_str).to eq 'ba'
     end
     it 'return correct alphabets for 701' do
-      baz = AlphabetCalc::AlphabetNum.new('701')
+      baz = AlphabetCalc::AlphabetNum.new(701)
       expect(baz.to_str).to eq 'baz'
     end
   end

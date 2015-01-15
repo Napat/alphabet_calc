@@ -16,11 +16,11 @@ describe AlphabetCalc::AlphabetDigit do
 
   describe 'initialize from number' do
     it 'return correct alphabet for 0' do
-      a = AlphabetCalc::AlphabetDigit.new('0')
+      a = AlphabetCalc::AlphabetDigit.new(0)
       expect(a.to_str).to eq 'a'
     end
     it 'return correct alphabet for 25' do
-      z = AlphabetCalc::AlphabetDigit.new('25')
+      z = AlphabetCalc::AlphabetDigit.new(25)
       expect(z.to_str).to eq 'z'
     end
   end

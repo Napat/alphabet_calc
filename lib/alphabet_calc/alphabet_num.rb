@@ -5,14 +5,13 @@ module AlphabetCalc
 
       @digits = Array.new
 
-      if input =~ /\A\d+\z/
+      if input.is_a?(Integer)
 
-        value = input.to_i
-        @digits.unshift AlphabetDigit.new('0') if value == 0
+        @digits.unshift AlphabetDigit.new(0) if input == 0
 
-        while value > 0 do
-          @digits.unshift AlphabetDigit.new( (value % 26).to_s )
-          value = value / 26
+        while input > 0 do
+          @digits.unshift AlphabetDigit.new( input % 26 )
+          input = input / 26
         end
 
       else

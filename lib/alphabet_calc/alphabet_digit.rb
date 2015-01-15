@@ -2,8 +2,8 @@ module AlphabetCalc
   class AlphabetDigit
 
     def initialize(input)
-      if input =~ /\A\d+\z/
-        @num = input.to_i
+      if input.is_a?(Integer)
+        @num = input
         @ch = (@num + 10).to_s(36)
       else
         @ch = input
