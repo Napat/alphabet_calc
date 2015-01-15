@@ -41,4 +41,10 @@ describe AlphabetCalc::AlphabetNum do
     end
   end
 
+  describe 'initialize from invalid characters' do
+    it 'dies if initialize with something else than a - z' do
+      expect { AlphabetCalc::AlphabetNum.new('a+b') }.to raise_error
+    end
+  end
+
 end

@@ -9,10 +9,12 @@ module AlphabetCalc
           @digits.unshift AlphabetDigit.new( input % 26 )
           input = input / 26
         end
-      else
+      elsif input =~ /\A[a-z]+\z/
         input.split('').each do |ch|
           @digits.push AlphabetDigit.new(ch)
         end
+      else
+        raise ArgumentError
       end
     end
 
