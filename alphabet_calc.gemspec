@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = AlphabetCalc::VERSION
   spec.authors       = ["Pinnapong Silpsakulsuk"]
   spec.email         = ["pinnapong@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{An alphabet calculator.}
+  spec.description   = %q{Use alphabets as base26 numbers start with a = 0.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
